@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>RQ editor</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" type="icon/ico" href="favicon.ico">
+    <link rel="stylesheet" type="text/css" href="codemirror/lib/codemirror.css">
+</head>
+<body>
+
+<div class="view">
+<span>Code View</span><br>	
+<iframe class="comp" srcdoc="" ></iframe></div>
+<textarea class="code codemirror-textarea"></textarea><input type="button" onclick="compile()" value="RUN"></input>
+<script type="text/javascript" src="script.js"></script>
+<script type="text/javascript" src="codemirror/lib/codemirror.js"></script>
+<script src="jquery.js"></script>
+</body>
+</html>
+<!--<!DOCTYPE html>
+<html>
+<head>
+<style>
+html{
+background-color:grey;
+}
+h1 {
+  border: 5px solid red;
+  
+}
+
+h2 {
+  border: 4px dotted blue;
+}
+
+div {
+  border: double;
+}
+</style>
+</head>
+<body>
+
+<h1>A heading with a solid red border</h1>
+
+<h2>A heading with a dotted blue border</h2>
+
+<div>A div element with a double border.</div>
+
+</body>
+</html>-->

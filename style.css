@@ -1,0 +1,29 @@
+body{
+width: 100%;
+height: 100%;
+background-color: #253529;
+}
+.code{
+margin-top: 1%;
+height: 300px;
+background-color:#282923 ;
+color: #1FF81F;
+font-size: 20px;
+font-family: cursive;
+margin-left: 5%;
+}
+.comp{
+	border: 5px solid black;
+	background-color: white;
+	margin-left: 25%;
+}
+input{
+margin-right: 15;
+}
+span{
+font-family: fantasy;
+font-size: 30px ;
+color: #1D42F8;
+margin-left: 25%;
+
+}
