@@ -10,15 +10,22 @@ background-color:#282923 ;
 color: #1FF81F;
 font-size: 20px;
 font-family: cursive;
-margin-left: 5%;
+margin-left: 3%;
 }
 .comp{
 	border: 5px solid black;
 	background-color: white;
 	margin-left: 25%;
 }
-input{
-margin-right: 15;
+button{
+border-radius: 15%;
+width: 100px;
+height: 80px;
+margin-left: 0.5%;
+background-color: greenyellow;
+}
+img{
+width: 60px;
 }
 span{
 font-family: fantasy;
