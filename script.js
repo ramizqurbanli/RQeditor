@@ -5,3 +5,8 @@ document.querySelector(".code").style.width= screen.width*0.85+"px";
 function compile() {
 	document.querySelector(".comp").srcdoc=document.querySelector(".code").value+"<meta name='viewport' content='width=device-width, initial-scale=1.0'>"
 }
+$(document).keypress(function(){
+    if(event.which == 38){  //f
+        compile();
+    }
+});
