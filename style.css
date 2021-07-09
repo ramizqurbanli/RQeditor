@@ -32,5 +32,6 @@ font-family: fantasy;
 font-size: 30px ;
 color: #1D42F8;
 margin-left: 25%;
+user-select: none;
 
 }
