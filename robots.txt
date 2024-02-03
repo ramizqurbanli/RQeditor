@@ -1,4 +1,3 @@
 User-Agent:*
-Disallow:/index.html/
 Disallow:favicon.ico
 Disallow:Apps-Run-Executable-icon.png
