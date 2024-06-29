@@ -1,3 +1,7 @@
-User-Agent:*
-Disallow:favicon.ico
-Disallow:Apps-Run-Executable-icon.png
+User-agent: *
+Disallow: /cgi-bin/
+Disallow: /tmp/
+Disallow: /private/
+Allow: /.css$
+Allow: /.js$
+Allow: /*.png$
