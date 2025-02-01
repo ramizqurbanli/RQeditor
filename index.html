@@ -1,80 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Unleash your coding creativity on the go with our mobile-friendly web code editor. Effortlessly build and test your web projects from your smartphone or tablet. Featuring a clean interface, real-time previewing, and seamless syncing, our code editor empowers you to bring your digital ideas to life, anytime, anywhere."
-    />
+<head >
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Unleash your coding creativity on the go with our mobile-friendly web code editor. Effortlessly build and test your web projects from your smartphone or tablet. Featuring a clean interface, real-time previewing, and seamless syncing, our code editor empowers you to bring your digital ideas to life, anytime, anywhere."> 
     <title>RQ editor</title>
-    <link rel="stylesheet" type="text/css" href="styles.css" />
-    <!-- Include Highlight.js CSS (you can change the theme by swapping the URL) -->
-    <link
-      rel="stylesheet"
-      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css"
-    />
-    <link rel="icon" type="icon/ico" href="favicon.ico" />
-  </head>
-  <body>
-    <div class="view">
-      <span>Code View</span><br />
-      <iframe class="comp" srcdoc=""></iframe>
-    </div>
-
-    <!-- Replace textarea with a contenteditable pre/code block -->
-    <div class="code-container">
-      <pre><code id="codeField" class="language-html" contenteditable="true">// Type your code here...
-&lt;!DOCTYPE html&gt;
-&lt;html lang="en"&gt;
-  &lt;head&gt;
-    &lt;meta charset="UTF-8"&gt;
-    &lt;title&gt;My Project&lt;/title&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
-    &lt;h1&gt;Hello, World!&lt;/h1&gt;
-  &lt;/body&gt;
-&lt;/html&gt;
-      </code></pre>
-    </div>
-    <button type="button" onclick="compile()">
-      <img
-        oncontextmenu="return false"
-        src="Apps-Run-Executable-icon.png"
-        draggable="false"
-        alt="Run"
-      />
-    </button>
-
-    <!-- Include Highlight.js library -->
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
-    <!-- Initialize Highlight.js -->
-    <script>
-      // Call this after any update to the code field
-      function applyHighlight() {
-        const codeElem = document.getElementById("codeField");
-        hljs.highlightElement(codeElem);
-      }
-
-      // Example compile function that updates the preview and applies highlighting.
-      function compile() {
-        // Get code from the editable code field
-        const code = document.getElementById("codeField").innerText;
-        // Update the iframe preview (srcdoc)
-        document.querySelector(".comp").srcdoc = code;
-        // Apply syntax highlighting
-        applyHighlight();
-      }
-
-      // Optionally, highlight the initial content on page load.
-      window.addEventListener("DOMContentLoaded", applyHighlight);
-    </script>
-    <!-- Cloudflare Web Analytics -->
-    <script
-      defer
-      src="https://static.cloudflareinsights.com/beacon.min.js"
-      data-cf-beacon='{"token": "5caa8e5d907944dd818248a422f402fa"}'
-    ></script>
-    <!-- End Cloudflare Web Analytics -->
-  </body>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" type="icon/ico" href="favicon.ico">
+</head>
+<body>
+<div class="view">
+    <span>Code View</span><br>    
+    <iframe class="comp" srcdoc=""></iframe>
+</div>
+<textarea class="code codemirror-textarea"></textarea>
+<button type="button" onclick="compile()">
+    <img oncontextmenu="return false" src="Apps-Run-Executable-icon.png" draggable="false">
+</button>
+<script type="text/javascript" src="script.js"></script>
+<!-- Cloudflare Web Analytics -->
+<script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "5caa8e5d907944dd818248a422f402fa"}'></script>
+<!-- End Cloudflare Web Analytics -->
+</body>
 </html>
